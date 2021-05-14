@@ -1,0 +1,10 @@
+@import "variables";
+@import "mixins";
+@import "Main";
+@import "Header";
+@import "MainButton";
+@import "SearchBar";
+
+*{
+  font-family: $font;
+}

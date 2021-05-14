@@ -1,0 +1,21 @@
+.Header{
+  &__wrapper{
+    background-color: $lightGray;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+  &__content{
+    width: $mobileView;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$desk} {
+      width: 1024px;
+    }
+  }
+  &__info{
+    color: $darkGray;
+  }
+}

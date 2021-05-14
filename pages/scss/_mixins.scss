@@ -1,0 +1,13 @@
+@mixin button {
+  cursor: pointer;
+  border: 1px solid $darkGray;
+  color: $darkGray;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 4px;
+  transition: .2s;
+  padding: 6px 12px;
+  &:hover{
+    background-color: $green;
+  }
+}
