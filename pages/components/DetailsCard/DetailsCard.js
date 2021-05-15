@@ -2,18 +2,19 @@ import React from 'react';
 import MainButton from '../Buttons/MainButton';
 
 const DetailsCard = ({ onClick, showDetails, edges }) => {
-  const commitInfo = edges[showDetails].node.commitComments.nodes.map(
+  // console.log(edges[showDetails].node.object.history.edges)
+  const commitInfo = edges[showDetails].node.object.history.edges.map(
     (commit, i) => {
       return (
         <div key={i} className="DetailsCard__textCommitsWrapper">
           <div>
             <span className="DetailsCard__textKey">Author login:</span>
             <span className="DetailsCard__textAuthor">
-              {commit.author.login}
+              {commit.node.author.name}
             </span>
           </div>
           <div className="DetailsCard__textKey">Commit message:</div>
-          <div className="DetailsCard__commitText">{commit.commit.message}</div>
+          <div className="DetailsCard__commitText">{commit.node.message}</div>
         </div>
       );
     }

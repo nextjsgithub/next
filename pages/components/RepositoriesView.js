@@ -18,18 +18,24 @@ const RepositoriesView = () => {
               name
               description
               url
-              commitComments(last: 4) {
-                nodes {
-                  author {
-                    login
-                  }
-                  commit {
-                    message
-                  }
-                }
-              }
               owner {
                 login
+              }
+              object(expression: "master") {
+                ... on Commit {
+                  id
+                  history(first: 4) {
+                    edges {
+                      node {
+                        id
+                        author {
+                          name
+                        }
+                        message
+                      }
+                    }
+                  }
+                }
               }
             }
           }
