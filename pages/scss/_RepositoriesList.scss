@@ -1,0 +1,12 @@
+.RepositoriesList{
+  &__table{
+    th{
+      text-align: left;
+      padding: 10px;
+      font-size: 14px;
+    }
+    td {
+      padding: 4px 10px;
+    }
+  }
+}

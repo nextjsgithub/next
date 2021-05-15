@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLazyQuery } from '@apollo/client';
 import gql from 'graphql-tag';
-import RepositoriesList from './RepositoriesList';
+import RepositoriesList from './RepositoriesList/RepositoriesList';
 import SearchBar from './SearchBar/SearchBar';
 
 const RepositoriesView = () => {
