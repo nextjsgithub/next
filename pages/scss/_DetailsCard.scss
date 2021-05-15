@@ -1,0 +1,72 @@
+.DetailsCard{
+  &__wrapper{
+    width: calc(100% - 40px);
+    max-width: $mobileView;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid $lightGray;
+    border-radius: 4px;
+    @media #{$desk} {
+      width: $deskView;
+    }
+  }
+  &__btnWrapper{
+    padding: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__textPairWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 0 8px 0;
+    margin: 0 0 12px 0;
+    border-bottom: 1px solid $darkGray;
+  }
+  &__textDescriptionWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8px 0;
+    margin: 0 0 12px 0;
+    border-bottom: 1px solid $darkGray;
+  }
+  &__textKey{
+    color: $darkGreen;
+  }
+  &__textValue{
+    font-weight: bold;
+    padding-left: 8px;
+  }
+  &__textValueUrl{
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 12px;
+  }
+  &__textDescription{
+    font-weight: normal;
+    color: $darkGray;
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  &__textTitle{
+    font-weight: bold;
+    color: $darkGray;
+    text-transform: uppercase;
+    padding: 20px 0 10px 0;
+  }
+  &__textAuthor{
+    padding-left: 4px;
+  }
+  &__textCommitsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__commitText{
+    padding: 0 0 20px 0;
+  }
+}

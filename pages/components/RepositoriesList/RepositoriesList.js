@@ -13,7 +13,6 @@ const RepositoriesList = ({ data }) => {
   };
 
   const tableRow = edges.map((repo, i) => {
-    console.log(repo);
     return (
       <tr key={i}>
         <Desktop>

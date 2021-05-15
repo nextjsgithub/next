@@ -16,6 +16,18 @@ const RepositoriesView = () => {
             ... on Repository {
               id
               name
+              description
+              url
+              commitComments(last: 4) {
+                nodes {
+                  author {
+                    login
+                  }
+                  commit {
+                    message
+                  }
+                }
+              }
               owner {
                 login
               }
@@ -36,11 +48,12 @@ const RepositoriesView = () => {
     getRepo();
   };
 
-  if (called && loading) return <div className="SearchBar__spinner">Loading...</div>;
+  if (called && loading)
+    return <div className="SearchBar__spinner">Loading...</div>;
 
   return (
     <>
-      <SearchBar onClick={(number)=>handleGetRepoButton(number)} />
+      <SearchBar onClick={number => handleGetRepoButton(number)} />
       {data && <RepositoriesList data={data} />}
     </>
   );
