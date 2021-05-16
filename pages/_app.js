@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import { Provider } from 'next-auth/client';
-import './scss/app.scss';
+import '../scss/app.scss';
 
 export default function MyApp({ Component, pageProps }) {
   return (

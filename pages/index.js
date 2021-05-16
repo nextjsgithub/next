@@ -7,8 +7,8 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import MainButton from './components/Buttons/MainButton';
-import RepositoriesView from './components/RepositoriesView';
+import MainButton from '../components/Buttons/MainButton';
+import RepositoriesView from '../components/RepositoriesView';
 
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql'
