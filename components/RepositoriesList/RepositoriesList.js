@@ -6,7 +6,7 @@ import DetailsCard from '../DetailsCard/DetailsCard';
 const RepositoriesList = ({ data }) => {
   const { edges } = data.search;
 
-  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails, setShowDetails] = useState('');
 
   const handleClick = i => {
     setShowDetails(i);
@@ -29,7 +29,7 @@ const RepositoriesList = ({ data }) => {
     );
   });
 
-  if (!showDetails) {
+  if (showDetails === '') {
     return (
       <table className="RepositoriesList__table">
         <thead>

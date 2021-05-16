@@ -2,22 +2,27 @@ import React from 'react';
 import MainButton from '../Buttons/MainButton';
 
 const DetailsCard = ({ onClick, showDetails, edges }) => {
-  const commitInfo = edges[showDetails].node.object.history.edges.map(
-    (commit, i) => {
-      return (
-        <div key={i} className="DetailsCard__textCommitsWrapper">
-          <div>
-            <span className="DetailsCard__textKey">Author login:</span>
-            <span className="DetailsCard__textAuthor">
-              {commit.node.author.name}
-            </span>
+  let commitInfo;
+  if (edges[showDetails].node.object) {
+    commitInfo = edges[showDetails].node.object.history.edges.map(
+      (commit, i) => {
+        return (
+          <div key={i} className="DetailsCard__textCommitsWrapper">
+            <div>
+              <span className="DetailsCard__textKey">Author login:</span>
+              <span className="DetailsCard__textAuthor">
+                {commit.node.author.name}
+              </span>
+            </div>
+            <div className="DetailsCard__textKey">Commit message:</div>
+            <div className="DetailsCard__commitText">{commit.node.message}</div>
           </div>
-          <div className="DetailsCard__textKey">Commit message:</div>
-          <div className="DetailsCard__commitText">{commit.node.message}</div>
-        </div>
-      );
-    }
-  );
+        );
+      }
+    );
+  } else {
+    commitInfo = [<div key={1}>No commits / no master branch</div>];
+  }
 
   return (
     <div className="DetailsCard__wrapper">
@@ -50,7 +55,7 @@ const DetailsCard = ({ onClick, showDetails, edges }) => {
         <span className="DetailsCard__textDescription">{commitInfo}</span>
       </div>
       <div className="DetailsCard__btnWrapper">
-        <MainButton type="button" onClick={() => onClick(false)}>
+        <MainButton type="button" onClick={() => onClick('')}>
           Back to list
         </MainButton>
       </div>
