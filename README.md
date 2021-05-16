@@ -12,3 +12,6 @@ NEXTAUTH_URL=yourUrl
 NEXT_PUBLIC_BEARER=yourGithubBearer
 
 Development, add the same keys as environmental variables.
+
+## Start tests
+Run script: npm run test:jest

@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DetailsCard /> rendering renders correctly 1`] = `
+<div
+  class="DetailsCard__wrapper"
+>
+  <div
+    class="DetailsCard__textPairWrapper"
+  >
+    <span
+      class="DetailsCard__textKey"
+    >
+      Project name:
+    </span>
+    <span
+      class="DetailsCard__textValue"
+    >
+      vue-next
+    </span>
+  </div>
+  <div
+    class="DetailsCard__textPairWrapper"
+  >
+    <span
+      class="DetailsCard__textKey"
+    >
+      Owner:
+    </span>
+    <span
+      class="DetailsCard__textValue"
+    >
+      vuejs
+    </span>
+  </div>
+  <div
+    class="DetailsCard__textDescriptionWrapper"
+  >
+    <span
+      class="DetailsCard__textKey"
+    >
+      Link to clone repository:
+    </span>
+    <span
+      class="DetailsCard__textValueUrl"
+    >
+      https://github.com/vuejs/vue-next.git
+    </span>
+  </div>
+  <div
+    class="DetailsCard__textDescriptionWrapper"
+  >
+    <span
+      class="DetailsCard__textKey"
+    >
+      Description:
+    </span>
+    <span
+      class="DetailsCard__textDescription"
+    >
+      🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+    </span>
+  </div>
+  <div
+    class="DetailsCard__textDescriptionWrapper"
+  >
+    <span
+      class="DetailsCard__textTitle"
+    >
+      Last commits:
+    </span>
+    <span
+      class="DetailsCard__textDescription"
+    >
+      <div
+        class="DetailsCard__textCommitsWrapper"
+      >
+        <div>
+          <span
+            class="DetailsCard__textKey"
+          >
+            Author login:
+          </span>
+          <span
+            class="DetailsCard__textAuthor"
+          >
+            HcySunYang
+          </span>
+        </div>
+        <div
+          class="DetailsCard__textKey"
+        >
+          Commit message:
+        </div>
+        <div
+          class="DetailsCard__commitText"
+        >
+          fix(compiler-core): fix whitespace management for slots with whitespace: 'preserve' (#3767)
+
+fix #3766
+        </div>
+      </div>
+      <div
+        class="DetailsCard__textCommitsWrapper"
+      >
+        <div>
+          <span
+            class="DetailsCard__textKey"
+          >
+            Author login:
+          </span>
+          <span
+            class="DetailsCard__textAuthor"
+          >
+            Zen
+          </span>
+        </div>
+        <div
+          class="DetailsCard__textKey"
+        >
+          Commit message:
+        </div>
+        <div
+          class="DetailsCard__commitText"
+        >
+          chore: bump api-extractor from 7.12.1 to 7.15.1 (#3745)
+        </div>
+      </div>
+      <div
+        class="DetailsCard__textCommitsWrapper"
+      >
+        <div>
+          <span
+            class="DetailsCard__textKey"
+          >
+            Author login:
+          </span>
+          <span
+            class="DetailsCard__textAuthor"
+          >
+            Yunfei He
+          </span>
+        </div>
+        <div
+          class="DetailsCard__textKey"
+        >
+          Commit message:
+        </div>
+        <div
+          class="DetailsCard__commitText"
+        >
+          chore(types): remove unnecessary type assertion (#3724)
+        </div>
+      </div>
+      <div
+        class="DetailsCard__textCommitsWrapper"
+      >
+        <div>
+          <span
+            class="DetailsCard__textKey"
+          >
+            Author login:
+          </span>
+          <span
+            class="DetailsCard__textAuthor"
+          >
+            GU Yiling
+          </span>
+        </div>
+        <div
+          class="DetailsCard__textKey"
+        >
+          Commit message:
+        </div>
+        <div
+          class="DetailsCard__commitText"
+        >
+          fix(types): declared prop keys should always exist in \`props\` argument (#3726)
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    class="DetailsCard__btnWrapper"
+  >
+    <button
+      class="MainButton__Btn"
+      type="button"
+    >
+      Back to list
+    </button>
+  </div>
+</div>
+`;

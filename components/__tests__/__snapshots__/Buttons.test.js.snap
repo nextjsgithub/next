@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainButton /> rendering renders correctly 1`] = `
+<button
+  class="MainButton__Btn"
+/>
+`;
+
+exports[`<SearchButton /> rendering renders correctly 1`] = `
+<button
+  class="SearchBar__btn"
+/>
+`;

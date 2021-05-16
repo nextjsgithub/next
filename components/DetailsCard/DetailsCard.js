@@ -2,7 +2,6 @@ import React from 'react';
 import MainButton from '../Buttons/MainButton';
 
 const DetailsCard = ({ onClick, showDetails, edges }) => {
-  // console.log(edges[showDetails].node.object.history.edges)
   const commitInfo = edges[showDetails].node.object.history.edges.map(
     (commit, i) => {
       return (
